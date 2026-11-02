@@ -8,6 +8,7 @@ Repositório com meus projetos de estudo em Python. Cada projeto é pequeno, tem
 |---|---------|-----------------|
 | 01 | [Jogo de adivinhar o número](01-adivinhe-o-numero) | `input`, `random`, `if/elif/else`, `while`, f-strings |
 | 02 | [Calculadora de lote e risco](02-calculadora-risco) | funções, `return`, `float`, validação de dados |
+| 03 | [Diário de trades](03-diario-trades) | arquivos CSV, dicionários, menu em loop, acumuladores |
 
 Novos projetos serão adicionados aqui conforme eu avanço.
 
