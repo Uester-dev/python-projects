@@ -27,6 +27,16 @@ taxa de acerto = (trades positivos / total de trades) * 100
 
 Exemplo: trades de +10, -5 e +20 resultam em 3 trades, $25 de resultado e 66,67% de acerto.
 
+## Validação de entradas
+
+O programa não quebra com dados inválidos:
+
+- Letras ou opções inexistentes no menu mostram um aviso e voltam ao menu.
+- O ativo não pode ficar vazio, e é gravado em maiúsculas e sem espaços sobrando.
+- A direção aceita apenas C ou V (maiúscula ou minúscula) e é gravada em maiúscula.
+- O resultado precisa ser um número. Se não for, a pergunta se repete até a digitação correta.
+- A listagem e o resumo avisam quando ainda não há trades registrados.
+
 ## Como executar
 
 Requisito: Python 3 instalado. Entre na pasta do projeto e rode:
@@ -42,15 +52,17 @@ O arquivo `trades.csv` é criado na pasta de onde o programa é executado.
 - Leitura e escrita de arquivos CSV (`csv.DictWriter` e `csv.DictReader`)
 - Modos de abertura de arquivo (`"w"`, `"a"`, `"r"`) e o bloco `with`
 - Dicionários (chave e valor) para representar cada trade
-- Menu em loop com `while` e `if/elif`
+- Menu em loop com `while` e `if/elif/else`
+- Tratamento de erros com `try/except`
+- Validação de entradas com `while True` e `break`
+- Métodos de texto (`.upper()` e `.strip()`)
 - Acumuladores e contadores, conversão de texto em número com `float`
 - Cuidado com divisão por zero
 - Formatação de saída com f-strings
-- Depuração de erros (`KeyError`, modo de arquivo errado, arquivo antigo com cabeçalho diferente)
+- Testes manuais de casos extremos e depuração de erros (`KeyError`, modo de arquivo errado, arquivo antigo com cabeçalho diferente)
 
 ## Próximos passos
 
-- Tratar entradas inválidas (letras no lugar de números) com `try/except`
 - Registrar a data de cada trade automaticamente
-- Avisar quando não houver trades na listagem
-- Validar a direção (aceitar apenas C ou V)
+- Rejeitar valores como `nan` e `inf` no resultado
+- Permitir editar ou apagar um trade
