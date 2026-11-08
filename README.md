@@ -4,11 +4,12 @@ Repositório com meus projetos de estudo em Python. Cada projeto é pequeno, tem
 
 ## Projetos
 
-| # | Projeto | O que pratiquei |
-|---|---------|-----------------|
-| 01 | [Jogo de adivinhar o número](01-adivinhe-o-numero) | `input`, `random`, `if/elif/else`, `while`, f-strings |
-| 02 | [Calculadora de lote e risco](02-calculadora-risco) | funções, `return`, `float`, validação de dados |
-| 03 | [Diário de trades](03-diario-trades) | arquivos CSV, dicionários, menu em loop, acumuladores |
+| #   | Projeto                                             | O que pratiquei                                         |
+| --- | --------------------------------------------------- | ------------------------------------------------------- |
+| 01  | [Jogo de adivinhar o número](01-adivinhe-o-numero)  | `input`, `random`, `if/elif/else`, `while`, f-strings   |
+| 02  | [Calculadora de lote e risco](02-calculadora-risco) | funções, `return`, `float`, validação de dados          |
+| 03  | [Diário de trades](03-diario-trades)                | arquivos CSV, dicionários, menu em loop, acumuladores   |
+| 04  | [Analisador de trades](04-analisador-trades)        | pandas, groupby, cumsum/cummax, gráficos com matplotlib |
 
 Novos projetos serão adicionados aqui conforme eu avanço.
 
